@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 class Update {
   Future<void> update(List<String> arguments) async {
     print("Updating...");
-    final repoUrl = 'https://api.github.com/repos/bot-config-dart/fruit/contents/lib';
+    final repoUrl = 'https://api.github.com/repos/bot-config-dart/mc-launch-tome/contents/lib';
     final destinationDirectory = Directory.current.path + '/lib';
     print('Téléchargement du dossier "lib" dans $destinationDirectory...');
 
