@@ -113,7 +113,7 @@ class Coord {
         print("BANNED NUMBER: ${fruitz.activePhone.number}, order id: ${fruitz.activePhone.orderId}");
         await Utils.send("@everyone BANNED NUMBER: ${fruitz.activePhone.number}, order id: ${fruitz.activePhone.orderId}");
       }
-      return await fruitz.reset();
+      return await fruitz.reset("Tried $maxTries times, giving up");
     }
 
     if (await verifyColor()) {

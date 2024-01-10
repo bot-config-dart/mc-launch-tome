@@ -27,6 +27,7 @@ class Fruitz {
   int year = 1992;
   List<String> cities = [];
   bool probablyBan = false;
+  static String webhook = "";
 
   List<Phone> phones = [];
   Phone activePhone = Phone(number: "", orderId: "", country: "", cost: 0.0, fruitz: null);
@@ -74,7 +75,7 @@ class Fruitz {
           isProxyReset = false;
         });
 
-        print("Reset IP SUCCESS, wait 1 minutes and retry");
+        print("Reset IP SUCCESS, wait 25s and retry");
         await Future.delayed(Duration(seconds: 25));
       }
     } catch (e) {
@@ -105,11 +106,12 @@ class Fruitz {
     await coord.click();
   }
 
-  Future<void> reset() async {
+  Future<void> reset(String reason) async {
     error = true;
     canStart = false;
 
     print("Une erreur est survenue, reset en cours...");
+    await Utils.send("Une erreur est survenue sur le compte: ${activePhone.number}, order id: ${activePhone.orderId}, raison: $reason");
 
     await close();
     error = false;
@@ -249,7 +251,7 @@ class Fruitz {
       }
     }
 
-    Utils.send("Finished account with this number: ${activePhone.number}, order id: ${activePhone.orderId}");
+    await Utils.send("Finished account with this number: ${activePhone.number}, order id: ${activePhone.orderId}");
     print("Finished account with this number: ${activePhone.number}, order id: ${activePhone.orderId}");
   }
 
@@ -291,6 +293,7 @@ class Fruitz {
     modelName = config["model_name"];
     proxy = config["proxy"];
     year = config["year"];
+    webhook = config["webhook"];
 
     for (var key in mapConfig.keys) {
       Coord coord = Coord(

@@ -1,6 +1,7 @@
 model_name: "Shanna"
 year: 1992
 proxy: "http://90.63.185.232:30000/224c7726090deb91b663f22dc40d614f/reset?proxy=90.63.185.232:30003"
+webhook: "https://discord.com/api/webhooks/1190408158569566398/fKpojJ9DpwsB55A3Nyb6JU7PBA9__6VxVWW7fGmWK9NvIsOaBu01UrogXuElq1ESIa9a"
 fruits:
   - cerise:
     x: 858

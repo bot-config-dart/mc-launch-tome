@@ -1,12 +1,11 @@
 import 'dart:convert';
+import 'package:gmail/fruitz.dart';
 import 'package:http/http.dart';
 
 class Utils {
-  static String webhookUrl = "https://discord.com/api/webhooks/1190408158569566398/fKpojJ9DpwsB55A3Nyb6JU7PBA9__6VxVWW7fGmWK9NvIsOaBu01UrogXuElq1ESIa9a";
-
   static Future<void> send(String message) async {
     try {
-      await post(Uri.parse(webhookUrl), body: jsonEncode({ "content": message }), headers: {"Content-Type": "application/json"});
+      await post(Uri.parse(Fruitz.webhook), body: jsonEncode({ "content": message }), headers: {"Content-Type": "application/json"});
     } catch (e) {
       print(e);
       print("Pass to next actions, abandon de l'envoi du message");
