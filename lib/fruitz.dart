@@ -139,6 +139,10 @@ class Fruitz {
           continue;
         }
         switch (coord.name) {
+          case "meet_genre":
+            await Future.delayed(Duration(seconds: 1));
+            await coord.click();
+            break;
           case "validate_pics":
             for (int i = 0; i < 6; i++) {
               await Future.delayed(Duration(milliseconds: 500));
