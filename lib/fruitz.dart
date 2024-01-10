@@ -258,7 +258,7 @@ class Fruitz {
     try {
       Response response = await request.post("purchase/sms", body: {
         "key": authorization,
-        "country": "GB",
+        "country": "FR", // OR GB
         "service": "1335",
         "max_price": "0.10",
         "pricing_option": "1",
