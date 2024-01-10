@@ -69,14 +69,14 @@ class Fruitz {
       Response response = await get(Uri.parse(proxy));
       final payload = jsonDecode(response.body);
       print(payload);
-      if (payload['status']) {
+      if (payload.toString().contains("IP rotation process has been initiated")) {
         isProxyReset = true;
-        Timer(Duration(minutes: 2), () {
+        Timer(Duration(minutes: 1), () {
           isProxyReset = false;
         });
 
         print("Reset IP SUCCESS, wait 1 minutes and retry");
-        await Future.delayed(Duration(minutes: 1));
+        await Future.delayed(Duration(seconds: 25));
       }
     } catch (e) {
       print(e);
