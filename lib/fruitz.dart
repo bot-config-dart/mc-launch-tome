@@ -90,17 +90,17 @@ class Fruitz {
     Coord coord = coords.getOrFail("close");
     await coord.click();
 
-    await Future.delayed(Duration(milliseconds: 500));
+    await Future.delayed(Duration(seconds: 1));
 
     coord = coords.getOrFail("settings_close_btn");
     await coord.click();
 
-    await Future.delayed(Duration(milliseconds: 500));
+    await Future.delayed(Duration(seconds: 1));
 
     coord = coords.getOrFail("delete_instance");
     await coord.click();
 
-    await Future.delayed(Duration(milliseconds: 500));
+    await Future.delayed(Duration(seconds: 1));
 
     coord = coords.getOrFail("delete_confirm");
     await coord.click();
