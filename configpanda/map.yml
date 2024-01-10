@@ -1,0 +1,114 @@
+{
+  settings_instance:
+    { x: 1893, y: 171, type: click, color: dbdded, needColor: false },
+  clone_instance:
+    { x: 1799, y: 231, type: click, needColor: false, color: fffff },
+  clone_confirm_button:
+    { x: 1603, y: 345, type: click, needColor: false, color: 6684ff },
+  start_instance:
+    { x: 1787, y: 209, type: click, needColor: true, color: 4d70ff },
+  start_geo:
+    { x: 897, y: 219, type: waitColor, needColor: true, color: f4c51f },
+  start_geo_twos:
+    { x: 1258, y: 519, type: click, needColor: false, color: f4c51f },
+  map_load: { x: 1327, y: 240, type: click, needColor: false, color: f4c51f },
+  map_load_2: { x: 1867, y: 14, type: click, needColor: false, color: f4c51f },
+  input_geo: { x: 754, y: 299, type: write, needColor: false, color: fffff },
+  confirm_geo: { x: 815, y: 319, type: click, needColor: true, color: ffffff },
+  click_geo: { x: 988, y: 498, type: click, needColor: false, color: fffff },
+  locate_here: { x: 1332, y: 741, type: click, needColor: false, color: fffff },
+  close_geo: { x: 1360, y: 252, type: click, needColor: false, color: fffff },
+  launch_fruitz:
+    { x: 1024, y: 205, type: click, needColor: true, color: ffbc1d },
+  start_btn: { x: 1078, y: 934, type: click, needColor: true, color: ff29bb },
+  sms_connexion:
+    { x: 1085, y: 754, type: click, needColor: true, color: ffffff },
+  change_num_loc:
+    { x: 837, y: 405, type: click, needColor: true, color: f1f2f3 },
+  loc: { x: 982, y: 161, type: write, needColor: true, color: ffffff },
+  confirm_loc: { x: 1021, y: 267, type: click, needColor: true, color: ffffff },
+  phone_number: { x: 977, y: 385, type: write, needColor: false, color: fffff },
+  phone_continue:
+    { x: 1078, y: 934, type: click, needColor: false, color: ff29bb },
+  phone_confirm:
+    { x: 1122, y: 632, type: click, needColor: false, color: fffff },
+  code_input: { x: 772, y: 380, type: write, needColor: false, color: fffff },
+  continue_code:
+    { x: 1103, y: 938, type: click, needColor: false, color: fffff },
+  birth_day: { x: 824, y: 482, type: write, needColor: true, color: b7b9bf },
+  birth_continue:
+    { x: 1078, y: 934, type: click, needColor: true, color: ff29bb },
+  confirm_birth:
+    { x: 1101, y: 634, type: click, needColor: false, color: fffff },
+  name: { x: 826, y: 397, type: write, needColor: true, color: b7b9bf },
+  continue: { x: 1078, y: 934, type: click, needColor: true, color: ff29bb },
+  name_confirm:
+    { x: 1078, y: 649, type: click, needColor: false, color: fffff },
+  gender: { x: 1100, y: 468, type: click, needColor: false, color: fffff },
+  continue1: { x: 1078, y: 934, type: click, needColor: true, color: ff29bb },
+  gender_confirm:
+    { x: 1108, y: 633, type: click, needColor: false, color: fffff },
+  meet_genre: { x: 1114, y: 603, type: click, needColor: false, color: fffff },
+  continue2: { x: 1078, y: 934, type: click, needColor: true, color: ff29bb },
+  get_pic: { x: 819, y: 525, type: click, needColor: false, color: fffff },
+  allow: { x: 1083, y: 649, type: click, needColor: false, color: fffff },
+  settings_pics:
+    { x: 1199, y: 116, type: click, needColor: false, color: fffff },
+  select_all: { x: 1075, y: 109, type: click, needColor: false, color: fffff },
+  open: { x: 1116, y: 110, type: click, needColor: false, color: fffff },
+  validate_pics:
+    { x: 1197, y: 115, type: click, needColor: false, color: fffff },
+  continue_photo:
+    { x: 1078, y: 934, type: click, needColor: true, color: ff29bb },
+  bio: { x: 1001, y: 327, type: write, needColor: false, color: fffff },
+  continue4: { x: 1078, y: 934, type: click, needColor: true, color: ff29bb },
+  choose_fruit:
+    { x: 1049, y: 461, type: click, needColor: false, color: fffff },
+  continue5: { x: 1078, y: 934, type: click, needColor: true, color: ff29bb },
+  fruitz_confirm:
+    { x: 1070, y: 848, type: click, needColor: true, color: ff28ba },
+  pos_confirm: { x: 1058, y: 610, type: click, needColor: true, color: 2f9b90 },
+  google_confirm:
+    { x: 1130, y: 636, type: click, needColor: true, color: 1e75e8 },
+  dislikebef: { x: 839, y: 940, type: click, needColor: true, color: c458f },
+  like: { x: 1070, y: 938, type: click, needColor: true, color: fc1395 },
+  understand_like:
+    { x: 1032, y: 936, type: click, needColor: true, color: fe22b0 },
+  like2: { x: 1070, y: 938, type: click, needColor: true, color: fc1395 },
+  like3: { x: 1070, y: 938, type: click, needColor: true, color: fc1395 },
+  profile: { x: 728, y: 121, type: click, needColor: true, color: 35553 },
+  settings: { x: 732, y: 104, type: click, needColor: false, color: fffff },
+  modify_start_age:
+    {
+      x: 822,
+      y: 712,
+      type: drag,
+      to: { x: 705, y: 717 },
+      needColor: false,
+      color: fffff,
+    },
+  modify_end_age:
+    {
+      x: 954,
+      y: 714,
+      type: drag,
+      to: { x: 1197, y: 720 },
+      needColor: false,
+      color: fffff,
+    },
+  retour: { x: 720, y: 102, type: click, needColor: false, color: fffff },
+  home: { x: 1187, y: 101, type: click, needColor: false, color: fffff },
+  like4: { x: 1070, y: 938, type: click, needColor: true, color: fc1395 },
+  like5: { x: 1070, y: 938, type: click, needColor: true, color: fc1395 },
+  like6: { x: 1070, y: 938, type: click, needColor: true, color: fc1395 },
+  like7: { x: 1070, y: 938, type: click, needColor: true, color: fc1395 },
+  like8: { x: 1070, y: 938, type: click, needColor: true, color: fc1395 },
+  like9: { x: 1070, y: 938, type: click, needColor: true, color: fc1395 },
+  close: { x: 1213, y: 17, type: click, needColor: false, color: fffff },
+  settings_close_btn:
+    { x: 1892, y: 218, type: click, needColor: false, color: fffff },
+  delete_instance:
+    { x: 1755, y: 426, type: click, needColor: false, color: fffff },
+  delete_confirm:
+    { x: 1482, y: 356, type: click, needColor: false, color: fffff },
+}
