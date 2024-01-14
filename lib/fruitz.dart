@@ -68,16 +68,15 @@ class Fruitz {
   Future<void> resetProxy() async {
     try {
       Response response = await get(Uri.parse(proxy));
-      final payload = jsonDecode(response.body);
 
-      if (payload['status'] == "success") {
+      if (response.body.toString().contains("IP rotation process has been initiated")) {
         isProxyReset = true;
-        Timer(Duration(minutes: 3), () {
+        Timer(Duration(minutes: 1), () {
           isProxyReset = false;
         });
 
-        print("Reset IP SUCCESS, wait 1min and retry");
-        await Future.delayed(Duration(minutes: 1));
+        print("Reset IP SUCCESS, wait 25s and retry");
+        await Future.delayed(Duration(seconds: 25));
       }
     } catch (e) {
       print(e);
